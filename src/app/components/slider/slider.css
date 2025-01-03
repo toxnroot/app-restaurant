@@ -1,0 +1,50 @@
+ 
+  .mySwiper {
+    width: 80%;
+    height: fit-content;
+    justify-self: center;
+    align-self: center;
+  }
+  
+  .swp-cus-2 {
+    text-align: center;
+    font-size: 18px;  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .swiper-button-prev,.swiper-button-next{
+    top: 80%;
+    color: var(--praimary);
+  
+    
+  }
+
+  .swiper-button-prev::before{
+    content: '';
+    width: 15px;
+    height: 7px;
+    border-radius: 50px;
+    background: var(--foreground);
+    position: absolute;
+    right: -10px;
+
+  }
+  .swiper-button-next::before{
+    content: '';
+    width: 15px;
+    height: 7px;
+    border-radius: 50px;
+    background: var(--foreground);
+    position: absolute;
+    left: -10px;
+
+  }
+  @media screen and (max-width: 428px) {
+    .mySwiper{
+      width: 100%;
+    }
+}

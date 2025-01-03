@@ -1,0 +1,27 @@
+footer {
+    position: relative;
+    background-color: var(--praimary);
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+footer .list {
+    list-style: none;
+    display: flex;
+    align-items: center ;
+    justify-content: center ;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+footer .list li a {
+    color: inherit;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+footer ul li a:hover {
+    color: rgb(139, 138, 138); /* لون عند مرور المؤشر */
+}

@@ -1,0 +1,8 @@
+:root {
+    --background: #F5F5DC;
+    --foreground: #171717;
+    --praimary: #0968d8;
+    --clr: hsla(0, 0%, 100%, 0.556);
+    --size-lg:128px;
+    --size-md:64px;
+  }

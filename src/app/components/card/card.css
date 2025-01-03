@@ -1,0 +1,58 @@
+@import url(../../colors.css);
+.card{
+    width: 160px;
+    height: 200px;
+    background: var(--foreground);
+    padding: 8px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.img-card{
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: center;
+}
+.title-card{
+    color: var(--background);
+    font-size: 1.5rem;
+    
+}
+
+
+
+
+.card:hover{
+    cursor: pointer;
+    transition: all 500ms;
+    height: 160px;
+    .img-card{
+        height: 100%;
+        filter: blur(2px);
+        transition: all 1s;
+    }
+    .title-card{
+        position: absolute;
+        color: #1d1d1d;
+        transition: all 1s;
+        font-weight: bold;
+        font-size: 2rem;
+        background-color: hsla(0, 0%, 100%, 0.267);
+        border-radius: 10px;
+    }
+}
+
+ @media screen and (max-width: 428px){
+ .card {
+      width: 120px;
+      height: 150px;
+    }
+    .home{
+        width: 100% !important;
+    }
+  }
+

@@ -1,0 +1,28 @@
+body{
+    padding: 0;
+}
+.product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+}
+.btn-add-pro{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding: 20px;
+}
+.edit-product{
+    width: 80%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+    gap: 20px;
+}

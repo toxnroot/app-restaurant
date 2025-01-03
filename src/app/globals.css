@@ -1,27 +1,75 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url(./colors.css);
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+html, body {
+  width: 100%;
+  min-height: 100vh !important;
+  height: auto !important;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("./fonts/GeistMonoVF.woff") format("truetype");
 }
-
+@font-face {
+  font-family: "Tajawal";
+  src: url("./fonts/Tajawal-Regular.ttf" ) format("truetype");
+}
 body {
+  font-family: Tajawal, "Space Grotesk", sans-serif; /* تطبيق الخطوط حسب الحاجة */
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 5px;
+  user-select: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+/* يمكنك تخصيص المزيد من الأنماط هنا */
+
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: var(--praimary);
+}
+::-webkit-scrollbar-thumb {
+  background: #06366d;
+  border-radius: 10px;
+  width: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(119, 118, 118);
+}
+
+.home {
+  margin-top: 20px;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.card-img {
+  transition: transform 0.3s ease;
+}
+
+.clone-img {
+  position: fixed;
+  z-index: 1000;
+  pointer-events: none;
+  border-radius: 8px;
 }

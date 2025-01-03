@@ -1,0 +1,69 @@
+.darkThemeBtn  {
+    display: flex;
+    height: 30px;
+    
+  }
+.darkThemeBtn * {
+    transition: all 0.3s;
+    height: 30px;
+    
+  }
+
+  .darkThemeBtn input {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+  }
+
+  .darkThemeBtn label {
+
+    background: rgba(239, 239, 239, 0.5);
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .darkThemeBtn label:active {
+    border-radius: 5px;
+  }
+
+  .darkThemeBtn label svg {
+    position: absolute;
+    width: 16px;
+    transition: 0.3s;
+    z-index: 1;
+    fill: #000;
+  }
+
+  .darkThemeBtn label svg.sun {
+    width: 20px;
+    opacity: 0;
+    fill: #fff;
+  }
+  
+  .darkThemeBtn label svg.moon {
+    opacity: 1;
+    fill: #fff;
+  }
+
+  .darkThemeBtn input:checked + label {
+    background: #333333;
+  }
+
+  .darkThemeBtn input:checked + label svg.sun {
+    opacity: 1;
+  }
+
+  .darkThemeBtn input:checked + label svg.moon {
+    opacity: 0;
+  }
+
+  .darkThemeBtn input:checked ~ span {
+    background-color: #16174b;
+  }

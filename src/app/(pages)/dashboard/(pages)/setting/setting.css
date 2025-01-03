@@ -1,0 +1,25 @@
+.setting{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  
+}
+.add-logo-con{
+  backdrop-filter: blur(20px);
+  border: solid 2px white;
+  border-radius: 100px;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#add-logo{
+  display: none;
+}
+

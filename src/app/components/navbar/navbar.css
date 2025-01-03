@@ -1,0 +1,146 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--praimary);
+    color: white;
+    width: 90%;
+    border-radius: 10px;
+    margin: auto;
+    padding-block: 5px;
+    padding-inline: 10px;
+    position: sticky;
+    top: 5px;
+    z-index: 5;
+  }
+  
+  .scroll {
+    width: 100%;
+    top: 0;
+    border-radius: 0;
+  }
+  
+  .logo {
+    width: 40px;
+    border-radius: 50px;
+  }
+  
+  .cart {
+    width: 30px;
+    height: 30px;
+    fill: goldenrod;
+    background: #333333;
+    border-radius: 50px;
+    padding: 5px;
+  }
+  
+  .cart:hover {
+    fill: rgb(231, 169, 13);
+    background: #1e1d1d;
+  }
+  .profile-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .title {
+    font-size: 1.3rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .badge-con {
+    position: relative;
+    width: 30px;
+  }
+  
+  .badge {
+    background: var(--foreground);
+    color: var(--praimary);
+    width: 19px;
+    height: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    font-weight: bold;
+    font-size: 0.5rem;
+    z-index: 5;
+  }
+  
+  .con-nv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .btn-signup,.btn-login {
+    padding: 8px 16px;
+    background-color: var(--praimary);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    border: solid 1 px var(--foreground);
+  }
+  
+  .btn-signup:hover,.btn-login:hover {
+    background-color: var(--foreground);
+    color: var(--praimary);
+  }
+  
+  .toggle-nav {
+    display: none;
+    font-size: 24px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+  }
+  
+  @media (max-width: 768px) {
+    .con-nv {
+      display: none;
+    }
+  
+    .toggle-nav {
+      display: block;
+    }
+  
+    .con-nv.open {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: var(--praimary);
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+      z-index: 10;
+    }
+  }
+  .notify{
+    background-color: #333333;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  .notify svg{
+    width: 10px;
+  height: 10px;
+  object-fit: contain;
+  }

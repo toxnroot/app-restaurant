@@ -1,0 +1,56 @@
+
+.anl,.rate,.vist,.edit,.order,.setting{
+    fill: var(--clr);
+    width: var(--size-lg);
+    height: var(--size-lg);
+    box-shadow: 4px 0px 8px #000000b1;
+    border-radius: 5px;
+    padding: 8px;
+}
+.add-logo{
+    fill: var(--clr);
+    width: 100px;
+    height: 100px;
+    
+}
+.add-logo:hover{
+    fill: #ffffff;
+}
+.text-title{
+    background: var(--clr);
+    border-radius: 10px;
+}
+
+body{
+    padding-top: 0;
+}
+.card-vist{
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+@media screen and (max-width: 428px) {
+    .anl,.rate,.vist{
+        fill: var(--clr);
+        width: var(--size-md);
+        height: var(--size-md);
+    }
+    .dash{
+        width: 100%;
+        padding: 8px;
+        
+    }
+    .dash-v{
+        width: 100%;
+    }
+    .card-vist{
+        width: calc(100%/3);
+        display: flex;
+        justify-content: baseline;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+}

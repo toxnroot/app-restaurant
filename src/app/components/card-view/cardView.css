@@ -1,0 +1,108 @@
+.card-view {
+  width: 260px;
+  height: 440px;
+  background: var(--foreground);
+  color: var(--background);
+  border-radius: 10px;
+  overflow: hidden;
+  perspective: 1000px;
+  position: relative;
+  box-shadow: 0 0 10px black;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s ease;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+}
+
+.card-front {
+  background: var(--foreground);
+}
+
+.card-back {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transform: rotateY(180deg);
+  position: relative;
+  p {
+    position: absolute;
+    top: 10px;
+  }
+  background: #212121;
+}
+
+/* تأثير الدوران عند إضافة الكلاس "flipped" إلى .card-inner */
+.card-view.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-img {
+  width: 100%;
+  fill: var(--praimary);
+}
+
+ul {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+li {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.pr {
+  padding: 4px;
+  background: var(--background);
+  color: var(--foreground);
+}
+
+@media screen and (max-width: 428px) {
+  .card-view {
+    width: 180px;
+    height: 360px;
+    margin-top: 20px;
+  }
+}
+
+/* لتحديد زر flip */
+.flip-btn {
+  cursor: pointer;
+  padding: 5px;
+  border: solid 2px var(--praimary);
+  color: var(--praimary);
+  border-radius: 10px;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+}
+
+.flip-btn:hover {
+  background: var(--praimary);
+  color: white;
+}
+
+.ingredients {
+  padding: 20px;
+}
