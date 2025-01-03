@@ -23,6 +23,7 @@ const Page = async ({ params }) => {
     <div className="product flex items-center justify-center flex-col gap-2">
       <h1 className="title-product">{product}</h1>
       <Slider />
+      
       <GoBack />
     </div>
   );
